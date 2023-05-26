@@ -1,11 +1,7 @@
 import React from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import CategoryScreen from '../screens/CategoryScreen';
-import Home from '../Drawer/Home';
-import FlatListView from './FlatListView';
 import TabScreens from '../BottomTab/TabScreens';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import FoodInfoScreen from '../screens/FoodInfoScreen';
 
 type drawerType = {
   CategoryScreen: undefined;

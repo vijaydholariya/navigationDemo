@@ -1,7 +1,7 @@
 import {FlatList, View, Text, ScrollView, Image} from 'react-native';
 import {CATEGORIES, MEALS} from '../data/api_data';
 import {mealImageUrls} from '../data/api_data';
-import CategoryGridTile from '../componants/CategoryListItem';
+import CategoryGridTile from '../listDataItems/CategoryListItem';
 import {RootStackParamList} from '../screens/types';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {ImageSlider} from 'react-native-image-slider-banner';
@@ -21,7 +21,6 @@ const CategoryScreen: React.FC<CategoryScreenProps> = ({navigation}) => {
   }
 
   const mealImageUrls: any[] = MEALS.map(meal => ({img: meal.imageUrl}));
-  console.log('imageArray:', mealImageUrls);
   return (
     <>
       <FlatList
